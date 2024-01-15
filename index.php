@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Lien vers le fichier CSS pour les styles -->
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./resources/styles.css">
     <title>Invitation à la fête</title>
 </head>
 <body>
     <!-- Vidéo en arrière-plan -->
     <video autoplay muted loop id="bg-video">
-        <source src="./vecteezy_abstract-cyberpunk-animated-background_4846470.mp4" type="video/mp4">
+        <source src="./resources/vecteezy_abstract-cyberpunk-animated-background_4846470.mp4" type="video/mp4">
         <!-- Message pour les navigateurs qui ne supportent pas la balise vidéo -->
         Votre navigateur ne supporte pas la balise vidéo.
     </video>
@@ -47,6 +47,6 @@
     <p>Total Guests: <?php include 'count_guests.php';?></p>
 
     <!-- Lien vers le fichier JavaScript pour les fonctionnalités -->
-    <script src="script.js"></script>
+    <script src="./resources/script.js"></script>
 </body>
 </html>
