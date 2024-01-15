@@ -56,39 +56,48 @@ p span {
     z-index: -1;
 }
 
+
+
 /* Cyberpunk form styles */
 form {
-  background-color: #000;
-  color: #0f0;
-  padding: 20px;
-  border-radius: 10px;
-  font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
 }
 
 label {
-  display: block;
-  margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    padding: 15px;
+
 }
 
 input[type="text"],
 input[type="number"] {
-  background-color: #222;
-  color: #0f0;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 10px;
+    background-color: #222;
+    color: #0f0;
+    margin-bottom: 10px;
 }
 
 input[type="submit"] {
-  background-color: #0f0;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+    background-color: #0f0;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #00ff00;
+    background-color: #00ff00;
 }

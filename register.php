@@ -8,14 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
 
     // Simple form validation
-    if (empty($name) || empty($email) || empty($message)) {
+    if (empty($name) || empty($nombre)) {
         echo "Please fill out all fields.";
         exit();
     }
-    $host = "e-srv-lamp.univ-lemans.fr";
-    $user = "u2107883";
-    $database = "u2107883";
-    $password = "";
+    include 'config.php';
+    
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
@@ -24,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo("Connection failed");
         } 
 
-        $sql = "INSERT INTO messages (name, email, message) VALUES ('". $name."','".$email."','".$message ."')";
+        $sql = "INSERT INTO birthday-guests (Nom, Nombre) VALUES ('". $name."','".$npmbre."')";
         //$result = $conn->query($sql);
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
