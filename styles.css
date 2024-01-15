@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #0d0d0d;
+    color: #0f0;
+}
+
+.invitation {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    border: 1px solid #0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#explanation {
+    display: none;
+    margin-top: 10px;
+    color: #0f0;
+}
+
+button {
+    background-color: #0f0;
+    color: #0d0d0d;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b300;
+}
+
+a {
+    color: #0f0;
+}
+
+
+/* Ajout de styles pour la vidéo en arrière-plan */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
