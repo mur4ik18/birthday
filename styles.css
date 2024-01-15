@@ -55,3 +55,40 @@ p span {
     height: auto;
     z-index: -1;
 }
+
+/* Cyberpunk form styles */
+form {
+  background-color: #000;
+  color: #0f0;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: #222;
+  color: #0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00ff00;
+}
