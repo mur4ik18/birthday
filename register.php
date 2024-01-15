@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Collect form data
     $name = $_POST["name"];
-    $nombre = $_POST["nombre"];
+    $nombre = $_POST["number"];
 
     // Simple form validation
     if (empty($name) || empty($nombre)) {
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo("Connection failed");
         } 
 
-        $sql = "INSERT INTO birthday-guests (Nom, Nombre) VALUES ('". $name."','".$npmbre."')";
+        $sql = "INSERT INTO `birthday-guests` (name, nombre) VALUES ('". $name."','".$nombre."')";
         //$result = $conn->query($sql);
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
